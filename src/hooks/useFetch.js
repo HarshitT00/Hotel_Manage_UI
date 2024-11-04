@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-const useFetch = (url) =>{
+const useFetch = (murl) =>{
+
+    const url = `https://hotel-manage-api.onrender.com/api${murl}`
 
     const [data,setData] = useState([]);
     const [loading,setLoading] = useState(false);
